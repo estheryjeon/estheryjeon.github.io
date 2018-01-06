@@ -2,6 +2,8 @@
 /* CSS Document */
 
 @import url('https://fonts.googleapis.com/css?family=Overpass');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 
 body {
   font-family: "Overpass", sans-serif;
@@ -59,10 +61,34 @@ a:active {
 
 .small-text {
   font-size: 0.75em;
-  font-style: italic;
 }
 
 .description {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
+}
+
+.elements {
+  width: 100%;
+}
+.small {
+  width: 75%;
+}
+
+.assets {
+  padding-bottom: 5%;
+}
+
+.caption {
+  opacity: 0.5;
+}
+
+.avenir {
+  font-family: "Avenir";
+}
+.garamond {
+  font-family: "Cormorant Garamond";
+}
+.lato {
+  font-family: "Lato";
 }
