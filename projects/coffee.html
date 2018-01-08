@@ -1,11 +1,10 @@
 <!doctype html>
 <html>
 <head>
-  <title>Esther Y Jeon</title>
+  <title>Esther Y Jeon | Popular Coffee Times</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="../assets/favicon.png"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -34,21 +33,20 @@
   <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6 description">
-      <h1 class="bold">Every Day</h1>
+      <h1 class="bold">Popular Coffee Times</h1>
       <p>
-        Poster series for an imaginary photography exhibition at the
-        <a href="http://www.mmca.go.kr/eng/" target="_blank">
-        Museum of Modern and Contemporary Art</a> in Seoul, South Korea.
-        The exhibition celebrates the ordinariness and beauty of everyday
-        life. <br/><br/>
-        <a href="http://hideakihamada.com/" target="_blank">Hideaki Hamada</a><br/>
-        <a href="http://www.hasisipark.com/" target="_blank">Hasisi Park</a><br/>
-        <a href="http://www.kawashimakotori.com/" target="_blank">Kawashima Kotori<br/>
-        <a href="http://ninaahn.tumblr.com/" target="_blank">Nina Ahn</a>
+        Map of Philadelphia, PA that shows the busyness of coffee shops
+        throughout the day. Data was abstracted from
+        Google's Popular Times feature and the base map was traced from Google
+        Maps and manipulated in Illustrator. Colors were based off of
+        different types of coffee - espresso, latte, americano, iced coffee.
+        The base color of the map was chosen to reflect the skyline of
+        Philadelphia.
+        <br/><br/>
       </p>
       <p class="small-text">
-        Adobe Illustrator, Adobe Garamond Pro Bold, Adobe Garamond Pro Regular,
-        Nanum Myungjo Bold, Nanum Myungjo Regular
+        Google Maps, Google Popular Times, Adobe Illustrator, Filson Soft Medium,
+        Filson Soft Book
       </p>
     </div>
     <div class="col-sm-3"></div>
@@ -56,9 +54,9 @@
 
   <div class="row">
     <div class="col-sm-3"></div>
-    <div class="assets col-sm-6">
-      <p class="caption"> Elements </p>
-      <img class="photo" src="../assets/everyday/everyday-elements.jpg"/>
+    <div class="col-sm-6">
+      <p class="caption"> Data Abstraction </p>
+      <img class="photo" src="../assets/coffee/data.jpg"/>
     </div>
     <div class="col-sm-3"></div>
   </div>
@@ -66,29 +64,24 @@
   <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-      <p class="caption"> Posters </p>
-      <img class="photo" src="../assets/everyday/hasisi.jpg"/>
+      <p class="caption"> Map </p>
+      <div id="maps">
+        <img id="current" class="photo" src="../assets/coffee/1.jpg"/>
+      </div>
     </div>
     <div class="col-sm-3"></div>
   </div>
+
   <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-      <img class="photo" src="../assets/everyday/hideaki.jpg"/>
-    </div>
-    <div class="col-sm-3"></div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-      <img class="photo" src="../assets/everyday/kotori.jpg"/>
-    </div>
-    <div class="col-sm-3"></div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-      <img class="photo" src="../assets/everyday/nina.jpg"/>
+      <ul id="times">
+        <a id="1">Open - 9:00 AM </a> -
+        <a id="2">9:00 AM - 12:00 PM </a> -
+        <a id="3">12:00 PM - 3:00 PM </a> -
+        <a id="4">3:00 PM - 6:00 PM </a> -
+        <a id="5">6:00 PM - Close</a>
+      </ul>
     </div>
     <div class="col-sm-3"></div>
   </div>
