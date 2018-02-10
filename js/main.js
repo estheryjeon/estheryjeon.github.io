@@ -14,4 +14,11 @@ $(document).ready(function() {
         $('#current').attr('src', '../assets/coffee/' + clicked + '.jpg');
       });
 
+    $('#screen a').click(
+      function() {
+        var clicked = $(this).attr('id');
+        $('#current-screen').attr('src', '../assets/ers/screen' + clicked + '.jpg');
+      }
+    )
+
 });

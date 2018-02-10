@@ -19,14 +19,14 @@
 
   <div class="row">
     <div class="navbar">
-      <div class="col-sm-4"></div>
-      <div class="col-sm-2">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
         <a href="../index.html">Esther Y Jeon</a>
       </div>
-      <div class="col-sm-2">
+      <div class="col-sm-3">
         <a href="../info.html">Info</a>
       </div>
-      <div class="col-sm-4"></div>
+      <div class="col-sm-3"></div>
     </div>
   </div>
 
@@ -34,19 +34,17 @@
     <div class="col-sm-3"></div>
     <div class="col-sm-6 description">
       <h1 class="bold">Popular Coffee Times</h1>
+      <br/>
+      <p class="caption"> Overview </p>
       <p>
-        Map of Philadelphia, PA that shows the busyness of coffee shops
-        throughout the day. Data was abstracted from
-        Google's Popular Times feature and the base map was traced from Google
-        Maps and manipulated in Illustrator. Colors were based off of
-        different types of coffee - espresso, latte, americano, iced coffee.
-        The base color of the map was chosen to reflect the skyline of
-        Philadelphia.
+        Our professor tasked us with creating a map that visualizes any type
+        of data. So, naturally, as an avid coffee-drinker, I decided to visualize
+        the busyness of coffee shops in downtown Philadelphia, PA throughout the
+        week.
       </p>
-      <p class="small-text">
-        Google Maps, Google Popular Times, Adobe Illustrator, Filson Soft Medium,
-        Filson Soft Book
-      </p>
+      <br/>
+      <p class="caption">Tools</p>
+      <p> Google Maps, Google Popular Times, Adobe Illustrator</p>
     </div>
     <div class="col-sm-3"></div>
   </div>
@@ -54,8 +52,11 @@
   <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-      <p class="caption"> Data Abstraction </p>
-      <img class="photo" src="../assets/coffee/data.jpg"/>
+      <p class="caption"> Colors </p>
+      <p> The colors were inspired by the different types of coffee –
+        espresso, latte, americano, iced coffee. The base color of the map
+        was chosen to reflect the blue-gray skyline of Philadelphia.
+      <img class="photo" src="../assets/coffee/colors.jpg"/>
     </div>
     <div class="col-sm-3"></div>
   </div>
@@ -63,7 +64,72 @@
   <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-      <p class="caption"> Map </p>
+      <p class="caption"> Typeface </p>
+      <p> I chose to use Filson Soft for all text on the map because it
+        created a friendly and inviting mood while being legible.
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <p class="caption"> Elixr Coffee Roasters Data </p>
+      <p> All data was taken from Google's Popular Times feature.
+        The graphs below represent a week of popular times,
+        Monday – Sunday for Elixr Coffee
+        Roasters (my absolute favorite, check out the Guatemala Nueva Esperanza
+        pour-over if you have the chance!).
+      </p>
+      <img class="photo" src="../assets/coffee/elixr-data.jpg"/>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <p class="caption"> Elixr Data Abstraction </p>
+      <p> After collecting all the data, I abstracted it to different
+        levels of popularity - a darker value means there are more people at
+        that coffee shop. The graphs are split into 5 different time periods
+        in a day. I then averaged the colors to create the final graph.
+      </p>
+      <img class="photo" src="../assets/coffee/elixr-abstract.jpg"/>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <p class="caption"> Downtown Philadelphia Base Map </p>
+      <p> The base map was traced from Google Maps and manipulated for
+        simplification. Only the streets with coffee shops are named.
+      </p>
+      <img class="photo" src="../assets/coffee/base-map.jpg"/>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <p class="caption"> Final Maps </p>
+      <p> The 5 maps represent the 5 different time periods in the day. Each map
+        takes its designated color block from each coffee shop's final
+        graph. This is definitely not an exhaustive list of coffee shops,
+        but I hope to one day make an interactive web app so we never
+        have to wonder if there is a seat open at a coffee shop.
+      </p>
+      <br/>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
       <div id="maps">
         <img id="current" class="photo" src="../assets/coffee/1.jpg"/>
       </div>
@@ -72,17 +138,17 @@
   </div>
 
   <div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 caption">
       <ul id="times">
-        <a id="1">Open - 9:00 AM </a> -
-        <a id="2">9:00 AM - 12:00 PM </a> -
-        <a id="3">12:00 PM - 3:00 PM </a> -
-        <a id="4">3:00 PM - 6:00 PM </a> -
+        <a id="1">Open - 9:00 AM </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a id="2">9:00 AM - 12:00 PM </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a id="3">12:00 PM - 3:00 PM </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a id="4">3:00 PM - 6:00 PM </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a id="5">6:00 PM - Close</a>
       </ul>
     </div>
-    <div class="col-sm-3"></div>
+    <div class="col-sm-2"></div>
   </div>
 
 </div>
