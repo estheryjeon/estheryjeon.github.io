@@ -102,5 +102,6 @@ a:active {
 }
 
 #screen {
-  text-align: center;
+  display: block;
+  margin: auto;
 }
