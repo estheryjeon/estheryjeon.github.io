@@ -1,107 +1,40 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css?family=Overpass');
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-body {
-  font-family: "Overpass", sans-serif;
+@font-face {
+  font-family: 'Freight';
+  src: url("../assets/fonts/freight-big-bold.otf");
 }
 
-h1 {
+@font-face {
+  font-family: 'SFPro';
+  src: url("../assets/fonts/SF-Pro-Text-Regular.otf");
+}
+
+body {
+  font-family: "SFPro", sans-serif;
   font-size: 2em;
 }
 
-.bold {
-  font-weight: 700;
-}
-
-.container-fluid {
+.box {
   padding-bottom: 5%;
+  padding-top: 7.5%;
 }
 
-.navbar {
-  padding-top: 2.5%;
-  font-size: 1em;
-  text-align: center;
-}
-
-/* --- links --- */
 a {
   color: black;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
+  text-decoration: line-through;
   color: black;
 }
 a:visited {
   text-decoration: none;
   color: black;
 }
-a:active {
-  text-decoration: none;
-  color: black;
-}
 
-/* --- home --- */
-.cover {
-  width: 100%;
-  height: auto;
-}
-
-/* --- about --- */
-.about {
-  padding-top: 5%;
-}
-
-/* --- project pages -- */
-
-.photo {
-  width: 100%;
-  padding-bottom: 5%;
-}
-.small {
-  width: 75%;
-}
-
-.small-text {
-  font-size: 0.75em;
-}
-
-.description {
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-}
-
-.assets {
-  padding-bottom: 5%;
-}
-
-.caption {
-  opacity: 0.5;
-}
-
-.avenir {
-  font-family: "Avenir", sans-serif;
-}
-.lato {
-  font-family: "Lato", sans-serif;
-}
-.helvetica {
-  font-family: "Helvetica", sans-serif;
-}
-
-#times {
-  text-align: center;
-}
-
-#times a {
-  display: inline-flex;
-  justify-content: space-around;
-}
-
-#screen {
-  display: block;
-  margin: auto;
+a.active {
+  text-decoration: line-through !important;
+  color: black !important;
 }
