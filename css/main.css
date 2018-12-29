@@ -2,33 +2,6 @@
 /* CSS Document */
 
 @font-face {
-<<<<<<< HEAD
-  font-family: 'Freight';
-  src: url("../assets/fonts/freight-big-bold.otf");
-}
-
-@font-face {
-  font-family: 'SFPro';
-  src: url("../assets/fonts/SF-Pro-Text-Regular.otf");
-}
-
-body {
-  font-family: "SFPro", sans-serif;
-  font-size: 2em;
-}
-
-.box {
-  padding-bottom: 5%;
-  padding-top: 7.5%;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: line-through;
-=======
   font-family: 'Easley';
   src: url("../assets/font/Easley-Regular.otf") format("opentype");
 }
@@ -53,17 +26,10 @@ body {
   font-family: 'Easley', sans-serif;
 }
 .link:hover {
->>>>>>> update
   color: black;
   opacity: 0.5;
   text-decoration: none;
 }
-<<<<<<< HEAD
-
-a.active {
-  text-decoration: line-through !important;
-  color: black !important;
-=======
 .active {
   font-weight: 700;
 }
@@ -194,5 +160,4 @@ a.active {
 .description {
   padding-top: 2.5%;
   padding-bottom: 5%;
->>>>>>> update
 }
