@@ -17,10 +17,6 @@ body {
   letter-spacing: 0.4px;
 }
 
-#smile {
-  width: 10%;
-}
-
 .link {
   color: black;
   font-family: 'Easley', sans-serif;
@@ -29,9 +25,6 @@ body {
   color: black;
   opacity: 0.5;
   text-decoration: none;
-}
-.active {
-  font-weight: 700;
 }
 
 .container {
@@ -54,6 +47,25 @@ body {
   padding-top: 1.5%;
   margin: 0;
 }
+
+#index {
+  visibility: hidden;
+}
+
+#smile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#smile a {
+  padding: 0;
+}
+#smile img {
+  width: 50%;
+}/*
+#smile img:hover {
+  opacity: 1;
+}*/
 
 .navbar {
   font-family: 'Easley';

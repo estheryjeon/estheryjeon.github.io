@@ -1,26 +1,30 @@
 $(document).ready(function() {
 
-  // password protect
-  $('.password').on('click', function () {
-    var testV = 1;
-    var pass1 = prompt('Please Enter Your Password',' ');
-    while (testV < 100) {
-      if (pass1 == null ) {
-        return;
-      }
-      if (!pass1)
-        history.go(-1);
-      if (pass1.toLowerCase() == config.ADVIL_KEY) {
-        window.open('projects/advil.html','_self');
-        break;
-      }
-      testV+=1;
-      var pass1 = prompt('Incorrect Password, Please Try Again.',' ');
+/*
+  function hoverActive(link, des) {
+    if ($(link).hasClass('active')) {
+      $(des).css('visibility', 'visible');
+    } else {
+      $(link).hover(function() {
+        $(des).css('visibility','visible');
+        }, function() {
+        $(des).css('visibility','hidden');
+      })
     }
-    /*if (pass1.toLowerCase()!="password" & testV ==3)
-      history.go(0);*/
-    return "";
-  });
+  }
+
+  hoverActive('#work','#made');*/
+
+
+  if ($('#smile').hasClass('active')) {
+    $('#smile').css('opacity', '1');
+  } else {
+    $('#smile').css('opacity', '0.5');
+    $('#smile').hover(function() {
+      $(this).css('opacity','1');
+      }, function() {
+      $(this).css('opacity','0.5');
+    })}
 
 
 });
