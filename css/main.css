@@ -62,10 +62,7 @@ body {
 }
 #smile img {
   width: 50%;
-}/*
-#smile img:hover {
-  opacity: 1;
-}*/
+}
 
 .navbar {
   font-family: 'Easley';
@@ -136,6 +133,13 @@ body {
   color: black;
   opacity: 0.5;
   text-decoration: none;
+}
+
+/* --- about --- */
+
+.link-icons {
+  display: flex;
+  align-items: center;
 }
 
 /* --- project pages -- */
