@@ -20,7 +20,7 @@ body {
 .link {
   color: black;
   font-family: 'Easley', sans-serif;
-  font-size: 0.9em;
+  font-size: 0.9em !important;
 }
 .link:hover {
   color: black;
