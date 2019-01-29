@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css?family=Chivo');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900,900i');
+
 @font-face {
   font-family: 'Easley';
   src: url("../assets/font/Easley-Regular.otf") format("opentype");
@@ -12,15 +15,16 @@
 }
 
 body {
-  font-family: 'HKGrotesk', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.875em;
   letter-spacing: 0.4px;
 }
 
 .link {
   color: black;
-  font-family: 'Easley', sans-serif;
-  font-size: 0.9em !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  /*font-size: 0.9em !important;*/
 }
 .link:hover {
   color: black;
@@ -43,7 +47,8 @@ body {
 .page-des {
   width: 100%;
   text-align: center;
-  font-family: 'Easley';
+  font-family: 'Roboto';
+  font-weight: 700;
   padding-bottom: 0;
   padding-top: 1.5%;
   margin: 0;
@@ -66,7 +71,8 @@ body {
 }
 
 .navbar {
-  font-family: 'Easley';
+  font-family: 'Roboto';
+  font-weight: 700;
   width: 100%;
   text-align: center;
   padding-bottom: 5%;
@@ -114,8 +120,9 @@ body {
 
 /* --- home --- */
 .titles {
-  font-family: 'Easley';
-  font-size: 0.9em;
+  font-family: 'Roboto';
+  font-weight: 700;
+  /*font-size: 0.9em;*/
 }
 .title-des {
   text-align: center;
@@ -141,6 +148,9 @@ body {
 
 .link-icons {
   display: flex;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400 !important;
   align-items: center;
 }
 
