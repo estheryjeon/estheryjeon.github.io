@@ -1,18 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css?family=Chivo');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900,900i');
-
-@font-face {
-  font-family: 'Easley';
-  src: url("../assets/font/Easley-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'HKGrotesk';
-    src: url("../assets/font/HKGrotesk-Medium.otf") format("opentype");
-}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -24,7 +13,6 @@ body {
   color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  /*font-size: 0.9em !important;*/
 }
 .link:hover {
   color: black;
