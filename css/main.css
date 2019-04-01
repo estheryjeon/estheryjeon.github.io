@@ -177,6 +177,10 @@ iframe {
   opacity: 0.75;
 }
 
+#pink {
+  color: #ff48b0 !important;
+}
+
 .description {
   padding-top: 2.5%;
   padding-bottom: 5%;
