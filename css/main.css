@@ -1,17 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900,900i');
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 0.875em;
   letter-spacing: 0.4px;
 }
 
 .link {
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 700;
 }
 .link:hover {
@@ -35,7 +33,7 @@ body {
 .page-des {
   width: 100%;
   text-align: center;
-  font-family: 'Roboto';
+  font-family: Arial;
   font-weight: 700;
   padding-bottom: 0;
   padding-top: 1.5%;
@@ -59,7 +57,7 @@ body {
 }
 
 .navbar {
-  font-family: 'Roboto';
+  font-family: Arial;
   font-weight: 700;
   width: 100%;
   text-align: center;
@@ -108,9 +106,8 @@ body {
 
 /* --- home --- */
 .titles {
-  font-family: 'Roboto';
+  font-family: Arial;
   font-weight: 700;
-  /*font-size: 0.9em;*/
 }
 .title-des {
   text-align: center;
@@ -137,7 +134,7 @@ body {
 .link-icons {
   display: flex;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 400 !important;
   align-items: center;
 }
