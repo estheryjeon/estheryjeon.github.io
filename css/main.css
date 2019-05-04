@@ -175,7 +175,17 @@ iframe {
 }
 
 #pink {
+  color: #3255A4 !important;
+  background: #FFE800;
+}
+#pink:active {
   color: #ff48b0 !important;
+}
+#pink:hover {
+  color: #ff48b0 !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+  cursor: url('../assets/rejection-email/hand-pink.png'), default;
 }
 
 .description {
