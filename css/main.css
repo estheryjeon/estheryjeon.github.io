@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+
 body {
   font-family: Arial, sans-serif;
   font-size: 0.875em;
@@ -102,6 +104,13 @@ body {
     width: 100%;
     justify-content: space-around;
   }
+}
+
+#coffee-img {
+  width: 13px;
+  height: 13px;
+  margin-bottom: 2.5px;
+  margin-left: 2px;
 }
 
 /* --- home --- */
