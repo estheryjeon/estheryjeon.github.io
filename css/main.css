@@ -4,15 +4,14 @@
 
 /* --- TYPE --- */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 @font-face {
   font-family: 'Loretta', serif;
-  src: url('../assets/fonts/loretta-regular.eot'); /* IE9 Compat Modes */
-  src: url('../assets/fonts/loretta-regular.woff') format('woff'), /* Modern Browsers */
-    url('../assets/fonts/loretta-regular.woff2') format('woff2'), /* Super Modern Browsers */
-     url('../assets/fonts/loretta-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-     url('../assets/fonts/loretta-regular.svg#svgLoretta-regular') format('svg') /* Legacy iOS */
+  src: url('..fonts/Loretta-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Loretta-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('..fonts/Loretta-Regular.woff') format('woff'), /* Modern Browsers */
+      url('..onts/Loretta-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+      url('..fonts/Loretta-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('..fonts/Loretta-Regular.svg#svgLoretta-Regular') format('svg') /* Legacy iOS */
 }
 
 h1, h2, h3, h4 {
