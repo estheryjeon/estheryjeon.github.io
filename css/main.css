@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: 'Loretta', serif;
-  src: url('..fonts/Loretta-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Loretta-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('..fonts/Loretta-Regular.woff') format('woff'), /* Modern Browsers */
-      url('..onts/Loretta-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-      url('..fonts/Loretta-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-      url('..fonts/Loretta-Regular.svg#svgLoretta-Regular') format('svg') /* Legacy iOS */
+  src: url('/fonts/Loretta-Regular.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Loretta-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('/fonts/Loretta-Regular.woff') format('woff'), /* Modern Browsers */
+      url('/fonts/Loretta-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+      url('/fonts/Loretta-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('/fonts/Loretta-Regular.svg#svgLoretta-Regular') format('svg') /* Legacy iOS */
 }
 
 h1, h2, h3, h4 {
@@ -22,12 +22,12 @@ h1, h2, h3, h4 {
 p {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
-  margin: 8px 0px 8px 0px;
+  margin: 8px 0 8px 0;
 }
 
 h2 {
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 ul {
