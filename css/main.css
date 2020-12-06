@@ -25,7 +25,8 @@ h1, h3, h4 {
 p {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
-  margin: 8px 0 8px 0;
+  font-size: 18px;
+  margin: 8px 0 16px 0;
 }
 
 h2 {
@@ -61,7 +62,7 @@ a {
 /* --- LAYOUT --- */
 
 .container {
-  padding: 5% 30%;
+  padding: 5% 27%;
 }
 
 .posts {
@@ -78,10 +79,18 @@ img {
  padding-bottom: 24px;
 }
 
+.reflection-style {
+  background-color: black;
+  color: white;
+}
+.reflection {
+  display: none;
+}
+
 /*---- MEDIA QUERIES ----*/
 
 @media (max-width: 768px) {
-  .container { padding: 10% 20%; }
+  .container { padding: 10% 15%; }
 }
 @media (max-width: 425px) {
   .container { padding: 10%; }
