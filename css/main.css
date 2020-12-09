@@ -24,7 +24,7 @@ h1, h3, h4 {
 
 p {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.4;
+  line-height: 1.6;
   font-size: 18px;
   margin: 8px 0 16px 0;
 }
@@ -65,19 +65,25 @@ a {
   padding: 5% 27%;
 }
 
+.nav {
+  padding-bottom: 16px;
+}
+
 .posts {
   padding: 24px 0 24px 0;
 }
 
 .spacer {
   display: flex;
-  height: 40px;
+  height: 24px;
 }
 
 img {
  width:100%;
  padding-bottom: 24px;
 }
+
+/*---- REFLECTION ----*/
 
 .reflection-style {
   background-color: black;
@@ -93,5 +99,5 @@ img {
   .container { padding: 10% 15%; }
 }
 @media (max-width: 425px) {
-  .container { padding: 10%; }
+  .container { padding: 5%; }
 }
