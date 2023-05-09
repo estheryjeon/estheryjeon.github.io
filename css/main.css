@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Henrietta';
-  src: url('./css/fonts/VCHenrietta-Light-Trial.otf') format("opentype");
+  src: url('./fonts/VCHenrietta-Light-Trial.otf') format("opentype");
 }
 
 h1 {
