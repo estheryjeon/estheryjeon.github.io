@@ -4,8 +4,12 @@
 font-family: 'Inter', sans-serif;
 
 @font-face {
-  font-family: 'Loretta';
-  src: url('../assets/Loretta-Light.otf') format('otf');
+  font-family: 'Loretta', 'Times New Roman', Times, serif;    
+  src: url('./fonts/Loretta-Light.eot') format('embedded-opentype'); 
+  src: url('.fonts/Loretta-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('.fonts/Loretta-Light.woff') format('woff'), /* Pretty Modern Browsers */
+        url('.fonts/Loretta-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('.fonts/Loretta-Light.svg#svgLoretta-Light') format('svg'); /* Legacy iOS */
   font-weight: light;
   font-style: normal;
 }
