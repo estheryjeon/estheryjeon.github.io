@@ -3,9 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 @font-face {
-  /* font-family: 'Loretta', 'Times New Roman', Times, serif; */
   font-family: 'Loretta';
-  /* src: url('./fonts/Loretta-Light.otf') format('opentype'); */
   src: url('fonts/Loretta-Light.otf') format('opentype');
   font-weight: light;
   font-style: normal;
