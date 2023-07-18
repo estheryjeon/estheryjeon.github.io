@@ -1,77 +1,97 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: 'Henrietta';
-  src: url('./fonts/VCHenrietta-Light-Trial.otf') format("opentype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+font-family: 'Inter', sans-serif;
 
 @font-face {
-  font-family: 'Tagada';
-  src: url('./fonts/Tagada-TRIAL-Regular.otf') format("opentype");
+  font-family: 'Loretta';
+  src: url('../assets/Loretta-Light.otf') format('otf');
+  font-weight: light;
+  font-style: normal;
 }
 
 body {
-  background-color: #F6F6F6;
+  background-color: #FFFFFF;
+  padding: 5% 30% 10% 30%;
+}
+
+.container {
+  padding-bottom: 16px;
+}
+
+img {
+  width: 100%;
+}
+
+.img-caption {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: grey;
+  margin: 2px;
 }
 
 h1 {
-    font-family: 'Henrietta';
-    font-size: 54px;
-    margin: 8px 0 16px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
 }
 
-h2 {
-    font-family: 'Henrietta';
-    font-size: 24px;
-    margin: 8px 0 8px 0;
-  }
-
 p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Loretta', serif;
   line-height: 1.6;
-  font-size: 16px;
-  margin: 8px 0 16px 0;
+  font-size: 1em;
 }
 
 a {
   color: black;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  text-decoration: none;
+  font-family: 'Loretta', serif;
+  position: relative;
 }
 a:hover {
-  color: black;
-  text-decoration-style: wavy;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-style:dashed;
+  text-decoration-thickness: 1.5px; 
+  text-decoration-color: gray;
 }
 
 li {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Loretta', sans-serif;
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 1em;
   margin: 8px 0 8px 0;
-  list-style-type: "✱  "
+  list-style-type: "*  "
 }
 
 .caption {
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
+  color: grey;
 }
 
-/* --- LAYOUT --- */
+.caption-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: grey;
+}
 
-.container {
-  padding: 5% 25%;
+.button {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
 }
 
 .spacer {
   display: flex;
-  height: 24px;
+  height: 16px;
 }
 
 /*---- MEDIA QUERIES ----*/
 
-@media (max-width: 768px) {
-  .container { padding: 10% 15%; }
+ @media (max-width: 768px) { 
+  body { padding: 5% 10% 10% 10%; }
+
 }
 @media (max-width: 425px) {
-  .container { padding: 5%; }
+  body { padding: 2.5%; }
 }
