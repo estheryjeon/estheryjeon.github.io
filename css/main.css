@@ -1,18 +1,13 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-font-family: 'Inter', sans-serif;
 
 @font-face {
-  font-family: 'Loretta', 'Times New Roman', Times, serif;    
-  src: url('./fonts/Loretta-Light.eot') format('embedded-opentype'); 
-  src: url('.fonts/Loretta-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('.fonts/Loretta-Light.woff') format('woff'), /* Pretty Modern Browsers */
-        url('.fonts/Loretta-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('.fonts/Loretta-Light.svg#svgLoretta-Light') format('svg'); /* Legacy iOS */
+  font-family: 'Loretta', 'Times New Roman', Times, serif;
+   src: url('./fonts/Loretta-Light.otf') format("opentype");
   font-weight: light;
   font-style: normal;
-}
+ }
 
 body {
   background-color: #FFFFFF;
@@ -41,7 +36,7 @@ h1 {
 }
 
 p {
-  font-family: 'Loretta', serif;
+  font-family: 'Loretta', 'Times New Roman', Times, serif;
   line-height: 1.6;
   font-size: 1em;
 }
