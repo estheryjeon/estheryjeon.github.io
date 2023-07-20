@@ -28,15 +28,135 @@
             With that information plus our portfolio projections, we’re able to suggest a deposit amount to our customers to reach their goals.
             Essentially, we're able to give some deposit advice.
         </p>
-        <img src="../assets/advice-cover.png" alt=".">
+        <img src="../assets/advice/advice-cover.png" alt=".">
         <p class="img-caption">A sneak peek of deposit advice.</p>
     </section>
 
     <section class="container">
+      <h1>What is deposit advice?</h1>
+      <p>
+        Here's a quick example! I want to save up for a new car so I create an investing goal.
+      </p>
+        <li>My goal is $40,000.</li>
+        <li>I want to reach that goal by the year 2030.</li>
         <p>
-          I had to take a break from updating my portfolio. This is coming soon though!
+          Betterment can calculate how much I need to deposit each month to be on track to reach my goal by 2030.
+        Getting that number requires goal forecaster, which is a great tool. 
+        But, it would be even better if we can power our deposit flows to display it when you’re making your first deposit, or whenever you want to set up your auto-deposit.
         </p>
-      </section>
+    </section>
+
+    <section class="container">
+      <h1>The Problem</h1>
+      <p>
+        Betterment has this amazing tool called goal forecaster that tells you how much to deposit each month to reach your goals. 
+        Unfortunately, not many people use it. 
+        We hoped to use the power of goal forecaster to help customers get closer to their goals in the most important moment: the deposit flow.
+      </p>
+    </section>
+
+    <section class="container">
+      <h1>Designs</h1>
+      <p>
+        We actually already had a simpler version of this on mobile and learned that it didn’t have a significant impact on auto-deposits. 
+        The plan was to bring web to parity with mobile while adding new features that could increase goal confidence and deposits.
+      </p>
+      <p>
+        There are a couple pieces of information we can display. 
+        We don’t want to show everything, only what’s most impactful when making a deposit.
+        Here are all the pieces:
+        <li>Projected balance<br>
+          This is the future. This is what your account balance could be if you deposited $100, $200, etc. 
+        </li>
+        <li>Goal status<br>
+          You're either on track or off track. This is decided by the projection graph.
+        </li>
+        <li>Goal projection graph<br>
+          This projection graph visualizes how much impact you can make with a deposit or auto-deposit.
+        </li>
+        <li>Suggested deposit amount<br>
+          This is the monthly amount we recommend to help you get on track.
+        </li>
+        <li>Goal confidence<br>
+          This is a percentage that shows how likely you are to reach your goal. 
+        </li>
+      </p>
+      <img src="../assets/advice/goal-forecaster.png" alt=".">
+        <p class="img-caption">All those pieces above live here in the goal forecaster.</p>
+    </section>
+
+    <section class="container">
+      <h1>Testing</h1>
+      <p>
+        I did a few user tests to understand comprehension.
+        The first one was to test comprehension of advice. 
+        I learned that it was helpful! But it wasn’t clear where 84% (goal confidence) was coming from and how it was calculated.
+      </p>
+      <img src="../assets/advice/deposit-test-1.png" alt=".">
+        <p class="img-caption">Do users understand the advice?</p>
+      <p>
+        I did another user test with a different design. 
+        The goal of this one was to see if goal forecaster made sense in the deposit flow. 
+        People expected the “See how to get on track” to give more advice, but goal forecaster was confusing because it comes up blank for a $0 balance goal.
+      </p>
+      <img src="../assets/advice/deposit-test-2.png" alt=".">
+        <p class="img-caption">Do users understand goal forecaster in this context?</p>
+      <p>
+        So, the good news was that people appreciated the suggested deposit amount.
+      </p>
+        <li>Quote: “That is exceptional.”</li>
+        <p>
+        And the projected balance was exciting and motivating to see. 
+        We still needed work on parsing goal forecaster in smaller, digestible chunks and clearing up goal confidence.
+      </p>
+    </section>
+
+    <section class="container">
+      <h1>Iteration</h1>
+      <p>
+        In addition to the feedback above, I kept feeling that the advice could be demotivating if you were off track and we suggested a potentially large deposit amount. 
+        Especially when you just decided to deposit money.
+        Here are 2 things we did to help this:
+      </p>
+      <p>
+        <li>Live updates<br>
+          We update the projected balance and goal status as the customer inputs a deposit amount.
+        This allows the customer to see the impact immediately and get excited!
+        </li>
+      </p>
+      <img src="../assets/advice/live-adviceGIF.gif" alt=".">
+      <p class="img-caption">Off track to on track with a single click?!</p>
+      <p>
+        <li>Income boundary<br>
+        Based on the simplest math, our suggested deposit amount can be really large. 
+        The worst thing is suggesting a large deposit amount that is completely out of your budget. 
+        To resolve this, we factored in income to make sure we don’t show a demotivating number.
+      </li>
+      </p>
+      <img src="../assets/advice/pm.png" alt=".">
+      <p class="img-caption">The deciding message from my PM.</p>
+    </section>
+
+    <section class="container">
+      <h1>Final experience</h1>
+      <img src="../assets/advice/final-adviceGIF.gif" alt=".">
+      <p class="img-caption">final-final-4.png</p>
+    </section>
+
+    <section class="container">
+      <h1>Learnings & reflection</h1>
+      <p>
+        We launched to a small percentage of our users to see the impact. It was paused after a few weeks as we figured out how to better track it.
+      </p>
+      <p>
+        I spent most of my time trying to balance the reality of an off track goal and the tricky emotions that come with money. 
+        I wanted to make sure customers weren’t demotivated after expressing intent to deposit. 
+        If you’re trying to contribute to your goals, we shouldn’t shut you down with a big number. 
+        If I were to continue this project, I’d want to research customer deposit motivations more. 
+        As well as figuring out how we can work with the customer to create more customized advice.
+      </p>
+    </section>
+
 
 </body>
 
