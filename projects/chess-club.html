@@ -14,7 +14,7 @@
 <body>
 
   <section class="container">
-    <a class="button" href="../index.html"> <- </a>
+    <a class="button" href="../index.html"> <- Home </a>
     <span class="spacer"></span>
   </section>
 
@@ -29,16 +29,31 @@
       We started exploring 3rd-party led clubs and found Chess4Life. 
       We partnered with them to create a Chess Club on Primer.
     </p>
-    <img src="../assets/chess/chess-cover.png" alt="A 3D illustration of a queen chess piece.">
-    <p class="img-caption">Chess club's cover image.</p>
+    <video autoplay muted loop>
+      <source src="../assets/chess/full.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <p class="img-caption">Quick overview of everything Chess club!</p>
   </section>
 
   <section class="container">
     <h1>Problem</h1>
     <p>
-      Many of the most popular chess platforms aren’t kid-friendly. For example, Lichess is one of the best chess platforms, but they don’t have spaces for kids to discuss and play with each other. The internet can be a scary place! Chess4Life got around it by creating accounts for every kid in their classes and putting them on “kid-mode” that limited all chat and social features on Lichess. This isn’t an ideal solution and, honestly, not as exciting for kids!
-      Primer was well-positioned to tackle this problem as being an online space for only kids (ages 8-16).
+      Many of the most popular chess platforms aren’t kid-friendly.
+      For example, Lichess is one of the best chess platforms, but they don’t have spaces for kids to discuss and play with each other. The internet can be a scary place! 
+      Chess4Life got around it by creating accounts for every kid in their classes and putting them on “kid-mode” that limited all chat and social features on Lichess. 
+      This isn’t an ideal solution and not as exciting for kids to interact with. But Primer was well-positioned to tackle this problem as an online space only for kids.
     </p>
+    <div class="quote">
+      Many of the most popular chess platforms aren’t kid-friendly...But Primer was well-positioned to tackle this problem as an online space only for kids.
+    </div>
+    <span class="spacer"></span>
+    <img src="../assets/chess/chesskid.png">
+    <p class="img-caption">Chess.com's kid platform. I can't speak to the effectiveness, but it didn't seem to take kids seriously (Primer's motto).</p>
+    <span class="spacer"></span>
+    <img src="../assets/chess/lichess.png">
+    <p class="img-caption">Lichess had a kid mode where you couldn't chat for safety reasons, 
+      but according to the forums I read, most kids were not on kid mode as there were no age restrictions to sign up.</p>
   </section>
 
   <section class="container">
@@ -51,57 +66,105 @@
     <p>
       In phase 1, we built the basic features of a chess platform: playing a friend and computer, chess profile, and chess tournaments.
     </p>
-    <img src="../assets/chess/home.png" alt="">
-    <p class="img-caption">Chess club home page! You can play a friend or computer, find your chess profile, and join a tournament if there's one live.</p>
+    <video autoplay muted loop>
+      <source src="../assets/chess/home.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <p class="img-caption">From the home page, you can play the computer or invite a friend to play you.</p>
     <span class="spacer"></span>
-    <img src="../assets/chess/profile.png" alt="">
+    <video autoplay muted loop>
+      <source src="../assets/chess/profile.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
     <p class="img-caption">You can review your games and stats on your profile.</p>
     <span class="spacer"></span>
-    <img src="../assets/chess/tournament.png" alt="">
-    <p class="img-caption">This is what the tournaments were like! You were auto-matched after each game unless you "paused."</p>
-
-      <p>
-        So, what did we build that was different from Lichess? 
-        What did I have to consider from the kid platform lens?   
-      </p>
-      <li>
-        The biggest thing is integrating Primer’s features with chess.
-        Primer already had social features like rooms, channels, and profiles for kids. 
-        You could now play chess in a room, chatting with your opponent. 
-      </li>
-      <img src="../assets/chess/rooms.png" alt="">
-      <p class="img-caption">Playing chess in rooms unlocked live audio and chat. Other people could also join your games as spectators.</p>
+    <video autoplay muted loop>
+      <source src="../assets/chess/tournament.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <p class="img-caption">This is what the tournaments were like! You were auto-matched after each game unless you paused.</p>
+    <p>
+      So, what did we build that was different from Lichess? 
+      What did I have to consider from the kid platform lens?   
+    </p>
     </section>
 
     <section class="container">
-     <li>
-      Another thing is how do we make sure this appeals to kids that are beginners and experts? 
-      We were only able to get to a little onboarding before we closed the club.
-      Some ideas were creating learning guides with Chess4Life
-      and creating teams based on level.
-     </li>
-     <img src="../assets/chess/onboarding.png" alt="">
-     <p class="img-caption">A quick onboarding screen with a few questions to gauge your level and interest.</p>
+      <h1>Integrating chess with Primer's features</h1>
+      <p>
+        Primer already had social features like rooms, channels, and profiles for kids. 
+        We wanted to see how chess could live in those systems.
+        Kids could now play chess in a room, while chatting with their opponent! 
+        Spectators could also join to watch games. Lichess could never.
+      </p>
+      <video autoplay muted loop>
+        <source src="../assets/chess/rooms.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      <p class="img-caption">Playing chess in rooms unlocked live audio and chat.</p>
+    </section>
+
+    <section class="container">
+     <h1>A club for all levels: beginners to experts</h1>
+     <p>
+      We wanted Chess club to be for all levels. 
+      The future ideal state was to create guides with Chess4Life for kids to learn chess in the club as well.
+      We were only able to get to a little onboarding before we closed the club,
+      but we hoped to use this onboarding survey to understand what kind of content to create.
+     </p>
+     <video autoplay muted loop>
+      <source src="../assets/chess/onboarding.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+     <p class="img-caption">A quick onboarding flow with a few questions to gauge your level and interest.</p>
     </section>
 
     <section class="container">
       <h1>Testing</h1>
       <p>
         We tested tournaments a few times with the Chess4Life classes. 
-        It went smoothly! The kids seemed to enjoy the ability to chat with other kids in the tournament.
+        It went smoothly! Kids enjoyed the ability to chat (maybe a little too much) and explored rooms.
         We then started doing weekly tournaments with Chess4Life and Primer kids, with prizes!
         Our first winners below :~)
+      </p>
+      <p class="quote">
+        Kids enjoyed the ability to chat freely (maybe a little too much) and slowly explored rooms.
       </p>
       <img src="../assets/chess/testing.png" alt="">
       <p class="img-caption">You can't see the photo here, but Liam sent us the cutest photo with his prize (a chess set!). </p>
     </section>
 
     <section class="container">
+      <h1>Iterations</h1>
       <p>
-        What was difficult was having enough members in the club to play with. 
-        Many kids would come online trying to find someone to play with outside of Chess Hour, but no one was available.
-        We were thinking we needed better notification systems or correspondence chess, but we didn't quite get to it.
+        There were still a few problems:
+        <ul class="points">
+          <li>Kids had trouble finding someone to play with outside of tournaments.</li>
+          <li>Kids often navigated away from games and lost track of it.</li>
+          <li>We still needed to figure out how to really differentiate ourselves from established platforms like Lichess and Chess.com.</li>
+        </ul>
       </p>
+      <p>
+        Some ideas I designed to solve said problems:
+        <ul class="points">
+          <li>Correspondence chess
+            <span class="spacer-s"></span>
+            <img src="../assets/chess/correspondence.png" alt="">
+            <p class="img-caption">You have a much longer time to make a move so if you leave your computer, it's no problem.</p>
+          </li>
+          <li>Better notification system
+            <span class="spacer-s"></span>
+            <img src="../assets/chess/notifications.png" alt="">
+            <p class="img-caption">Tournament notifications at the top within Chess club and active game notifications globally on the side bar.</p>
+          </li>
+          <li>Leveraging rooms for unique chess experiences
+            <span class="spacer-s"></span>
+            <img src="../assets/chess/puzzle-race.png" alt="">
+            <p class="img-caption">Puzzle racer is a classic game, but in a room, it would be so much more exciting!</p>
+          </li>
+        </ul>
+      </p>
+      <p>Unfortunately, we didn't get to these as Chess club came to a close.</p>
     </section>
 
   <section class="container">
@@ -114,14 +177,22 @@
       When I first got asked to design a chess club, I was like uhhh, I don't know anything about chess?
       But it ended up being one of my favorite projects! Learning chess was really fun. And creating a digital environment
       for people to play a game is quite a different way of thinking from designing social + educational features for kids.
-      It was a project that I could empathize with as I played more chess.
+      Despite the fact Chess club was for kids, it was a project that I could empathize with as I played more chess. 
+    </p>
+    <p class="quote">
+      Despite the fact Chess club was for kids, it was a project that I could empathize with as I played more chess. 
     </p>
     <p>
       I also unlocked a new skill: designing 3D chess pieces on Illustrator.
       I felt so powerful?
     </p>
-    <img src="../assets/chess/chess-pieces.png" alt="">
-    <p class="img-caption">I know, I know. The knight looks a bit rough, but we take those. </p>
+    <img src="../assets/chess/chess-cover.png" alt="A 3D illustration of a queen chess piece.">
+    <p class="img-caption">Chess club's cover image and the queen I created.</p>
+  </section>
+
+  <section class="container links">
+    <a class="button" href="art.html"> <- Art </a>
+    <a class="button" href="deposit-advice.html"> Deposit advice -> </a>
   </section>
 
 </body>

@@ -14,7 +14,7 @@
 <body>
 
     <section class="container">
-        <a class="button" href="../index.html"> <- </a>
+        <a class="button" href="../index.html"> <- Home </a>
         <span class="spacer"></span>
     </section>
 
@@ -37,8 +37,10 @@
       <p>
         Here's a quick example! I want to save up for a new car so I create an investing goal.
       </p>
+      <ul class="points">
         <li>My goal is $40,000.</li>
         <li>I want to reach that goal by the year 2030.</li>
+      </ul>
         <p>
           Betterment can calculate how much I need to deposit each month to be on track to reach my goal by 2030.
         Getting that number requires goal forecaster, which is a great tool. 
@@ -65,6 +67,7 @@
         There are a couple pieces of information we can display. 
         We don’t want to show everything, only what’s most impactful when making a deposit.
         Here are all the pieces:
+        <ul class="points">
         <li>Projected balance<br>
           This is the future. This is what your account balance could be if you deposited $100, $200, etc. 
         </li>
@@ -80,6 +83,7 @@
         <li>Goal confidence<br>
           This is a percentage that shows how likely you are to reach your goal. 
         </li>
+      </ul>
       </p>
       <img src="../assets/advice/goal-forecaster.png" alt=".">
         <p class="img-caption">All those pieces above live here in the goal forecaster.</p>
@@ -104,7 +108,9 @@
       <p>
         So, the good news was that people appreciated the suggested deposit amount.
       </p>
+      <ul class="points">
         <li>Quote: “That is exceptional.”</li>
+      </ul>
         <p>
         And the projected balance was exciting and motivating to see. 
         We still needed work on parsing goal forecaster in smaller, digestible chunks and clearing up goal confidence.
@@ -118,23 +124,25 @@
         Especially when you just decided to deposit money.
         Here are 2 things we did to help this:
       </p>
-      <p>
-        <li>Live updates<br>
+      <ul class="points">
+        <li>Live updates
+          <span class="spacer-s"></span>
           We update the projected balance and goal status as the customer inputs a deposit amount.
         This allows the customer to see the impact immediately and get excited!
-        </li>
-      </p>
-      <img src="../assets/advice/live-adviceGIF.gif" alt=".">
-      <p class="img-caption">Off track to on track with a single click?!</p>
-      <p>
-        <li>Income boundary<br>
+        <img src="../assets/advice/live-adviceGIF.gif" alt=".">
+        <p class="img-caption">Off track to on track with a single click?!</p>
+        </li>  
+      </ul>
+      <ul class="points">
+        <li>Income boundary
+        <span class="spacer-s"></span>
         Based on the simplest math, our suggested deposit amount can be really large. 
         The worst thing is suggesting a large deposit amount that is completely out of your budget. 
         To resolve this, we factored in income to make sure we don’t show a demotivating number.
+        <img src="../assets/advice/pm.png" alt=".">
+        <p class="img-caption">The deciding message from my PM.</p>
       </li>
-      </p>
-      <img src="../assets/advice/pm.png" alt=".">
-      <p class="img-caption">The deciding message from my PM.</p>
+      </ul>
     </section>
 
     <section class="container">
@@ -157,6 +165,10 @@
       </p>
     </section>
 
+    <section class="container links">
+      <a class="button" href="chess-club.html"> <- Chess Club </a>
+      <a class="button" href="goal-setting.html"> Goal Setting -> </a>
+    </section>
 
 </body>
 
