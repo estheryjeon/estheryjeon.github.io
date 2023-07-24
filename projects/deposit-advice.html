@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Esther Jeon / Deposit Advice</title>
+  <title>Deposit Advice</title>
   <link rel="icon" type="image/x-icon" href="../assets/advice.png">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,32 +33,36 @@
     </section>
 
     <section class="container">
-      <h1>What is deposit advice?</h1>
+      <h1>Background</h1>
       <p>
-        Here's a quick example! I want to save up for a new car so I create an investing goal.
+        So what is deposit advice? Here's a quick example! I want to save up for a new car so I create an investing goal.
       </p>
       <ul class="points">
-        <li>My goal is $40,000.</li>
-        <li>I want to reach that goal by the year 2030.</li>
+        <li>My goal is $40,000</li>
+        <li>I want to buy my car in 2030</li>
+        <li>Betterment says I need to save $300 a month</li>
       </ul>
         <p>
-          Betterment can calculate how much I need to deposit each month to be on track to reach my goal by 2030.
-        Getting that number requires goal forecaster, which is a great tool. 
-        But, it would be even better if we can power our deposit flows to display it when you’re making your first deposit, or whenever you want to set up your auto-deposit.
+          Betterment calculates how much I need to deposit each month to be on track through goal forecaster, a tool that 
+          visualizes what your money could be in the future. You can see this tool in any of your accounts.
+          But, it would be even better if we can power our deposit flows to display it when you’re making your first deposit, or whenever you want to set up your auto-deposit.
         </p>
     </section>
 
     <section class="container">
-      <h1>The Problem</h1>
+      <h1>Problem</h1>
       <p>
         Betterment has this amazing tool called goal forecaster that tells you how much to deposit each month to reach your goals. 
         Unfortunately, not many people use it. 
         We hoped to use the power of goal forecaster to help customers get closer to their goals in the most important moment: the deposit flow.
       </p>
+      <p class="quote">
+        We hoped to use the power of goal forecaster to help customers get closer to their goals in the most important moment: the deposit flow.
+      </p>
     </section>
 
     <section class="container">
-      <h1>Designs</h1>
+      <h1>Design</h1>
       <p>
         We actually already had a simpler version of this on mobile and learned that it didn’t have a significant impact on auto-deposits. 
         The plan was to bring web to parity with mobile while adding new features that could increase goal confidence and deposits.
@@ -69,23 +73,23 @@
         Here are all the pieces:
         <ul class="points">
         <li>Projected balance<br>
-          This is the future. This is what your account balance could be if you deposited $100, $200, etc. 
+          <span class="paragraph">This is the future. This is what your account balance could be if you deposited $100, $200, etc. </span>
         </li>
         <li>Goal status<br>
-          You're either on track or off track. This is decided by the projection graph.
+          <span class="paragraph">You're either on track or off track. This is decided by the projection graph.</span>
         </li>
         <li>Goal projection graph<br>
-          This projection graph visualizes how much impact you can make with a deposit or auto-deposit.
+          <span class="paragraph">This projection graph visualizes how much impact you can make with a deposit or auto-deposit.</span>
         </li>
         <li>Suggested deposit amount<br>
-          This is the monthly amount we recommend to help you get on track.
+          <span class="paragraph">This is the monthly amount we recommend to help you get on track.</span>
         </li>
         <li>Goal confidence<br>
-          This is a percentage that shows how likely you are to reach your goal. 
+          <span class="paragraph">This is a percentage that shows how likely you are to reach your goal.</span> 
         </li>
       </ul>
       </p>
-      <img src="../assets/advice/goal-forecaster.png" alt=".">
+      <img src="../assets/advice/goal-forecaster.png">
         <p class="img-caption">All those pieces above live here in the goal forecaster.</p>
     </section>
 
@@ -96,22 +100,23 @@
         The first one was to test comprehension of advice. 
         I learned that it was helpful! But it wasn’t clear where 84% (goal confidence) was coming from and how it was calculated.
       </p>
-      <img src="../assets/advice/deposit-test-1.png" alt=".">
+      <img src="../assets/advice/deposit-test-1.png">
         <p class="img-caption">Do users understand the advice?</p>
       <p>
         I did another user test with a different design. 
         The goal of this one was to see if goal forecaster made sense in the deposit flow. 
         People expected the “See how to get on track” to give more advice, but goal forecaster was confusing because it comes up blank for a $0 balance goal.
       </p>
-      <img src="../assets/advice/deposit-test-2.png" alt=".">
+      <img src="../assets/advice/deposit-test-2.png">
         <p class="img-caption">Do users understand goal forecaster in this context?</p>
       <p>
         So, the good news was that people appreciated the suggested deposit amount.
       </p>
-      <ul class="points">
-        <li>Quote: “That is exceptional.”</li>
-      </ul>
-        <p>
+      <p class="quote">
+        That was exceptional. <br>
+        <span class="img-caption">(Quote from a user tester)</span>
+      </p>
+      <p>
         And the projected balance was exciting and motivating to see. 
         We still needed work on parsing goal forecaster in smaller, digestible chunks and clearing up goal confidence.
       </p>
@@ -125,21 +130,21 @@
         Here are 2 things we did to help this:
       </p>
       <ul class="points">
-        <li>Live updates
-          <span class="spacer-s"></span>
-          We update the projected balance and goal status as the customer inputs a deposit amount.
-        This allows the customer to see the impact immediately and get excited!
-        <img src="../assets/advice/live-adviceGIF.gif" alt=".">
+        <li>Live updates<br>
+          <span class="paragraph">We update the projected balance and goal status as the customer inputs a deposit amount.
+            This allows the customer to see the impact immediately and get excited!</span>
+        <img src="../assets/advice/live-adviceGIF.gif">
         <p class="img-caption">Off track to on track with a single click?!</p>
         </li>  
       </ul>
       <ul class="points">
-        <li>Income boundary
-        <span class="spacer-s"></span>
-        Based on the simplest math, our suggested deposit amount can be really large. 
+        <li>Income boundary<br>
+        <span class="paragraph">
+          Based on the simplest math, our suggested deposit amount can be really large. 
         The worst thing is suggesting a large deposit amount that is completely out of your budget. 
         To resolve this, we factored in income to make sure we don’t show a demotivating number.
-        <img src="../assets/advice/pm.png" alt=".">
+        </span>
+        <img src="../assets/advice/pm.png">
         <p class="img-caption">The deciding message from my PM.</p>
       </li>
       </ul>
@@ -147,7 +152,7 @@
 
     <section class="container">
       <h1>Final experience</h1>
-      <img src="../assets/advice/final-adviceGIF.gif" alt=".">
+      <img src="../assets/advice/final-adviceGIF.gif">
       <p class="img-caption">final-final-4.png</p>
     </section>
 
@@ -158,16 +163,20 @@
       </p>
       <p>
         I spent most of my time trying to balance the reality of an off track goal and the tricky emotions that come with money. 
-        I wanted to make sure customers weren’t demotivated after expressing intent to deposit. 
-        If you’re trying to contribute to your goals, we shouldn’t shut you down with a big number. 
-        If I were to continue this project, I’d want to research customer deposit motivations more. 
-        As well as figuring out how we can work with the customer to create more customized advice.
+        I wanted customers to be motivated to reach their goal, not demotivate them with an unrealistic number.
+        But that number varies per person. I think we reached a spot where it was a step closer to financial personalization.
+        If I were to continue this project, I would spend more time figuring out ways to give customized advice; maybe we can learn 
+        more about the goal.
+      </p>
+      <p class="quote">
+        I spent most of my time trying to balance the reality of an off track goal and the tricky emotions that come with money. 
+        I wanted customers to be motivated to reach their goal, not demotivate them with an unrealistic number.
       </p>
     </section>
 
-    <section class="container links">
+    <section class="container page-links">
       <a class="button" href="chess-club.html"> <- Chess Club </a>
-      <a class="button" href="goal-setting.html"> Goal Setting -> </a>
+      <a class="button" href="plaid.html"> Plaid Migration -> </a>
     </section>
 
 </body>

@@ -7,7 +7,21 @@
   src: url('fonts/Loretta-Light.otf') format('opentype');
   font-weight: light;
   font-style: normal;
- }
+}
+
+@font-face {
+  font-family: 'Loretta-Italic';
+  src: url('fonts/Loretta-LightItalic.otf') format('opentype');
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Loretta-Medium';
+  src: url('fonts/Loretta-Medium.otf') format('opentype');
+  font-weight: medium;
+  font-style: normal;
+}
 
 body {
   background-color: #FFFFFF;
@@ -29,36 +43,12 @@ video {
   width: 100%;
 }
 
-.quote {
-  font-family: 'Loretta', 'Times New Roman', Times, serif;
-  font-size: 1.25em;
-  line-height: 1.4em;
-  padding-left: 16px;
-  width: 100%;
-  border-left: 1px solid;
-}
-
-.links {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2em;
-}
-
-.project-links {
-  list-style-type: "↗︎";
-}
-
-.img-caption {
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  color: grey;
-  margin: 2px;
-}
+/*---- TYPOGRAPHY ----*/
 
 h1 {
-    font-family: 'Inter', sans-serif;
-    font-size: 1em;
-    font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 p {
@@ -67,47 +57,7 @@ p {
   font-size: 1em;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-  font-family: 'Loretta', serif;
-  position: relative;
-}
-a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-style:dashed;
-  text-decoration-thickness: 1.5px; 
-  text-decoration-color: gray;
-}
-
-ul {
-  padding-left: 2%;
-}
-
-.points {
-  list-style-type: "✳︎";
-}
-
-li {
-  font-family: 'Loretta', sans-serif;
-  line-height: 1.6;
-  font-size: 1em;
-  margin: 8px 0 8px 0;
-  padding-right: 2%;
-  list-style-position: outside;
-
-  padding-left: 8px;
-  padding-bottom: 8px;
-}
-
 .caption {
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  color: grey;
-}
-
-.caption-link {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
   color: grey;
@@ -117,6 +67,96 @@ li {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
 }
+
+.quote {
+  font-family: 'Loretta-Italic', 'Times New Roman', Times, serif;
+  font-size: 1.25em;
+  line-height: 1.4em;
+  padding-left: 16px;
+  border-left: 1px solid;
+  margin: 24px;
+}
+
+.img-caption {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: grey;
+  margin: 2px;
+}
+
+.paragraph {
+  font-family: 'Loretta', 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+/*---- LISTS ----*/
+
+ul {
+  padding-left: 2%;
+}
+li {
+  font-family: 'Loretta', sans-serif;
+  line-height: 1.6;
+  font-size: 1em;
+  margin: 8px 0 8px 0;
+  padding-right: 2%;
+  list-style-position: outside;
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+
+.points {
+  list-style-type: "✳︎";
+}
+
+.points li{
+  font-family: 'Loretta-Medium', sans-serif;
+}
+
+/*---- LINKS ----*/
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Loretta', serif;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 1.5px; 
+  text-decoration-color: gray;
+}
+
+.caption-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px; 
+  text-decoration-color: gray;
+}
+
+.page-links {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+
+.project-links {
+  list-style-type: "↗︎";
+}
+
+.p-links {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px; 
+  text-decoration-color: gray;
+}
+
+/*---- SPACING ----*/
 
 .spacer {
   display: flex;
