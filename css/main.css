@@ -25,7 +25,7 @@
 
 body {
   background-color: #FFFFFF;
-  padding: 5% 30% 10% 30%;
+  padding: 5% 25% 10% 25%;
 }
 
 ::selection {
@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  padding-bottom: 16px;
+  padding-bottom: 5%;
 }
 
 img {
@@ -72,9 +72,9 @@ p {
   font-family: 'Loretta-Italic', 'Times New Roman', Times, serif;
   font-size: 1.25em;
   line-height: 1.4em;
-  padding-left: 16px;
   border-left: 1px solid;
-  margin: 24px;
+  margin: 8px;
+  padding: 0% 4%;
 }
 
 .img-caption {
@@ -160,7 +160,7 @@ a:hover {
 
 .spacer {
   display: flex;
-  height: 16px;
+  height: 24px;
 }
 .spacer-s {
   display: flex;
@@ -168,11 +168,10 @@ a:hover {
 }
 
 /*---- MEDIA QUERIES ----*/
-
  @media (max-width: 768px) { 
   body { padding: 5% 10% 10% 10%; }
 
 }
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   body { padding: 2.5%; }
 }
