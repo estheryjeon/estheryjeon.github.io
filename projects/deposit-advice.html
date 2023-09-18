@@ -11,7 +11,7 @@
   <link href="../css/main.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body class="project-body">
 
     <section>
         <a class="button" href="../"> <- Home </a>
@@ -19,7 +19,7 @@
     </section>
 
     <section class="container">
-        <h1>Deposit advice</h1>
+        <h2>Deposit advice</h2>
         <p class="caption">
             Betterment, 2021
         </p>
@@ -33,7 +33,7 @@
     </section>
 
     <section class="container">
-      <h1>Background</h1>
+      <h3>Background</h3>
       <p>
         So what is deposit advice? Here's a quick example! I want to save up for a new car so I create an investing goal.
       </p>
@@ -50,7 +50,7 @@
     </section>
 
     <section class="container">
-      <h1>Problem</h1>
+      <h3>Problem</h3>
       <p>
         Betterment has this amazing tool called goal forecaster that tells you how much to deposit each month to reach your goals. 
         Unfortunately, not many people use it. 
@@ -62,7 +62,7 @@
     </section>
 
     <section class="container">
-      <h1>Design</h1>
+      <h3>Design</h3>
       <p>
         We actually already had a simpler version of this on mobile and learned that it didn’t have a significant impact on auto-deposits. 
         The plan was to bring web to parity with mobile while adding new features that could increase goal confidence and deposits.
@@ -77,26 +77,26 @@
       <p>
         <ul class="points">
         <li>Projected balance<br>
-          <span class="paragraph">This is the future. This is what your account balance could be if you deposited $100, $200, etc. </span>
+          <p>This is the future. This is what your account balance could be if you deposited $100, $200, etc. </p>
         </li>
         <li>Goal status<br>
-          <span class="paragraph">You're either on track or off track. This is decided by the projection graph.</span>
+          <p>You're either on track or off track. This is decided by the projection graph.</p>
         </li>
         <li>Goal projection graph<br>
-          <span class="paragraph">This projection graph visualizes how much impact you can make with a deposit or auto-deposit.</span>
+          <p>This projection graph visualizes how much impact you can make with a deposit or auto-deposit.</p>
         </li>
         <li>Suggested deposit amount<br>
-          <span class="paragraph">This is the monthly amount we recommend to help you get on track.</span>
+          <p>This is the monthly amount we recommend to help you get on track.</p>
         </li>
         <li>Goal confidence<br>
-          <span class="paragraph">This is a percentage that shows how likely you are to reach your goal.</span> 
+          <p>This is a percentage that shows how likely you are to reach your goal.</p> 
         </li>
       </ul>
       </p>
     </section>
 
     <section class="container">
-      <h1>Testing</h1>
+      <h3>Testing</h3>
       <p>
         I did a few user tests to understand comprehension.
         The first one was to test comprehension of advice. 
@@ -127,7 +127,7 @@
     </section>
 
     <section class="container">
-      <h1>Iteration</h1>
+      <h3>Iteration</h3>
       <p>
         In addition to the feedback above, I kept feeling that the advice could be demotivating if you were off track and we suggested a potentially large deposit amount. 
         Especially when you just decided to deposit money.
@@ -135,8 +135,8 @@
       </p>
       <ul class="points">
         <li>Live updates<br>
-          <span class="paragraph">We update the projected balance and goal status as the customer inputs a deposit amount.
-            This allows the customer to see the impact immediately and get excited!</span>
+          <p>We update the projected balance and goal status as the customer inputs a deposit amount.
+            This allows the customer to see the impact immediately and get excited!</p>
             <span class="spacer-s"></span>
         <img src="../assets/advice/live-adviceGIF.gif">
         <p class="img-caption">Off track to on track with a single click?!</p>
@@ -145,11 +145,11 @@
       <span class="spacer-s"></span>
       <ul class="points">
         <li>Income boundary<br>
-        <span class="paragraph">
+        <p>
           Based on the simplest math, our suggested deposit amount can be really large. 
         The worst thing is suggesting a large deposit amount that is completely out of your budget. 
         To resolve this, we factored in income to make sure we don’t show a demotivating number.
-        </span>
+        </p>
         <img src="../assets/advice/pm.png">
         <p class="img-caption">The deciding message from my PM.</p>
       </li>
@@ -157,13 +157,13 @@
     </section>
 
     <section class="container">
-      <h1>Final experience</h1>
+      <h3>Final experience</h3>
       <img src="../assets/advice/final-adviceGIF.gif">
       <p class="img-caption">final-final-4.png</p>
     </section>
 
     <section class="container">
-      <h1>Learnings & reflection</h1>
+      <h3>Learnings & reflection</h3>
       <p>
         We launched to a small percentage of our users to see the impact. It was paused after a few weeks as we figured out how to better track it.
       </p>

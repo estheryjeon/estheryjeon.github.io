@@ -25,7 +25,21 @@
 
 body {
   background-color: #FFFFFF;
-  padding: 5% 25% 10% 25%;
+  padding: 5% 10% 10% 10%;
+}
+.project-body {
+  background-color: #FFFFFF;
+  padding: 5% 24% 10% 24%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 48px;
+}
+.grid > div {
+  padding: 24px;
+  border: 1px solid black;
 }
 
 ::selection {
@@ -38,6 +52,7 @@ body {
 
 img {
   width: 100%;
+  margin-top: 8px;
 }
 video {
   width: 100%;
@@ -47,7 +62,21 @@ video {
 
 h1 {
   font-family: 'Inter', sans-serif;
-  font-size: 1em;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Loretta', 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  font-size: 24px;
+  font-weight: 200;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -55,6 +84,13 @@ p {
   font-family: 'Loretta', 'Times New Roman', Times, serif;
   line-height: 1.6;
   font-size: 1em;
+  margin: 8px 0px;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .caption {
@@ -84,10 +120,11 @@ p {
   margin: 2px;
 }
 
-.paragraph {
-  font-family: 'Loretta', 'Times New Roman', Times, serif;
+.sub-copy {
+  font-family: 'Inter';
   line-height: 1.6;
   font-size: 1em;
+  color: grey;
 }
 
 /*---- LISTS ----*/

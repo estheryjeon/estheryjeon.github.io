@@ -11,14 +11,14 @@
   <link href="../css/main.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body class="project-body">
     <section>
         <a class="button" href="../"> <- Home </a>
         <span class="spacer"></span>
     </section>
 
     <section class="container">
-      <h1>Plaid Migration</h1>
+      <h2>Plaid Migration</h2>
       <p class="caption">
         Betterment, 2021
       </p>
@@ -34,7 +34,7 @@
     </section>
 
     <section class="container">
-        <h1>Problem</h1>
+        <h3>Problem</h3>
         <p>
             There were a couple issues we wanted to tackle:
         </p>
@@ -56,7 +56,7 @@
     </section>
 
     <section class="container">
-        <h1>Design</h1>
+        <h3>Design</h3>
         <p>
             Based on our current experience and where we want to go with the Plaid updates, I created a flow to figure out the steps at a higher level. 
             We have different logic based on where the customer enters the flow so I wanted to make sure I captured that, seeing what steps are similar 
@@ -71,7 +71,7 @@
     </section>
 
     <section class="container">
-        <h1>Testing</h1>
+        <h3>Testing</h3>
         <p>
             Before we get to the design iterations, I wanted to mention some early user testing.
             I started testing my designs really early to get some general feedback and comprehension.
@@ -91,16 +91,16 @@
     </section>
 
     <section class="container">
-        <h1>Intro</h1>
+        <h3>Intro</h3>
         <p>
             The intro went through quite a few iterations.
             For a bit of background, here are the types of connections you can make:
             <ul class="points">
                 <li>Instant connections through Plaid<br>
-                    <span class="paragraph">You connect your bank accounts with your bank credentials. This gives us the most accurate data on your finances. </span>
+                    <p>You connect your bank accounts with your bank credentials. This gives us the most accurate data on your finances. </p>
                 </li>
                 <li>Manual connections<br>
-                    <span class="paragraph">You enter an account and routing number and verify a micro-deposit. We get no real time data on this account.</span>
+                    <p>You enter an account and routing number and verify a micro-deposit. We get no real time data on this account.</p>
                 </li>
             </ul>
         </p>
@@ -123,39 +123,39 @@
     </section>
 
     <section class="container">
-        <h1>Connected accounts & funding accounts</h1>
+        <h3>Connected accounts & funding accounts</h3>
         <p>
             After connecting on Plaid, we show you a summary of the accounts you connected.
             Here are some iterations I did based on customer feedback on the existing Quovo experience.
         </p>
         <ul class="points">
             <li>Unclear what account was connected because the names often came back weird<br>
-                <span class="paragraph">
+                <p>
                     I tried to see if we could get the name of the account as it appears for customers' in their bank app.
                     Unfortunately, this was pretty inconsistent and hard to get from Plaid.
                     <span class="spacer-s"></span>
                     <img src="../assets/plaid/post-1.png">
-                </span>
+                </p>
             </li>
             <span class="spacer-s"></span>
             <li>Some customers only wanted to connect some accounts<br>
-                <span class="paragraph">
+                <p>
                     In this iteration, I gave the option to deselect some accounts to hide.
                     This doesn't mean we don't connect the account, but we ignore it from the Betterment side.
                     This one was out of scope.
                     <span class="spacer-s"></span>
                     <img src="../assets/plaid/post-3.png">
-                </span>
+                </p>
             </li>
             <span class="spacer-s"></span>
             <li>Funding accounts were unclear <br>
-                <span class="paragraph">
+                <p>
                     This is one of the main issues and I tried to resolve it by combining two steps:
                     showing the connected accounts and selecting funding accounts.
                     I got feedback that this wasn't very clear and transparent on what was connected.
                     <span class="spacer-s"></span>
                     <img src="../assets/plaid/post-2.png">
-                </span>
+                </p>
             </li>
         </ul> 
         <p>
@@ -170,7 +170,7 @@
     </section>
 
     <section class="container">
-        <h1>Final experience</h1>
+        <h3>Final experience</h3>
         <video autoplay muted loop>
             <source src="../assets/plaid/final-plaid.mp4" type="video/mp4">
           Your browser does not support the video tag.
@@ -178,7 +178,7 @@
     </section>
 
     <section class="container">
-        <h1>Learnings & reflection</h1>
+        <h3>Learnings & reflection</h3>
         <p>
             Some concrete stats:
             <ul class="points">
