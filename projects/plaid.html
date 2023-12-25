@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Plaid</title>
+  <title>Connecting Bank Acccounts</title>
   <link rel="icon" type="image/x-icon" href="../assets/plaid.png">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,148 +20,161 @@
     <section class="container">
         <img src="../assets/plaid/plaid-cover.png" alt="">
         <span class="spacer"></span>
-        <h2>Plaid Migration</h2>
+        <h2>Connecting Bank Accounts</h2>
         <p class="caption">Betterment, 2021</p>
         <p>
             Betterment's bank aggregator, Quovo, was acquired by Plaid so, first and foremost, we had to make the great migration to Plaid. 
-            This transition gave us a great opportunity to visually update the bank connecting experience, clarify the process and benefits, and become more transparent.
+            This transition gave us a great opportunity to visually update the bank connecting experience, clarify the process and benefits, and become more transparent with data.
         </p>
+        
+    </section>
+
+    <section class="container">
+        <h3>Background</h3>
+        <p>
+            A bank aggregator is a service that acts as a middleman between Betterment and your bank. 
+            It allows Betterment to connect to your bank so you can deposit, transfer, withdraw between the two. 
+            We were using Quovo for a few years. This is what the experience looked like: 
+        </p>
+        <video autoplay muted loop>
+            <source src="../assets/plaid/quovo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="caption">A bit outdated 😅</p>
+        <p>I was itching to update this flow visually since I joined Betterment and here was my golden opportunity!</p>
     </section>
 
     <section class="container">
         <h3>Problem</h3>
         <p>
-            There were a couple issues we wanted to tackle:
+            Connecting your bank account is a key part of the onboarding flow. 
+            If you can’t connect your bank, you can’t fund your new account!
+            I found out that the highest drop off point in the flow is the screen below – only 25-30% make it past this step.
+            That’s wild!
         </p>
-        <ul class="points">
-            <li>Bank connections broke frequently and balance updates were unpredictable on Quovo</li>
-            <li>Small banks were often unavailable on Quovo</li>
-            <li>It wasn't clear that there is a manual account connection option</li>
-            <li>Funding accounts were confusing</li>
-        </ul>
-        <video autoplay muted loop>
-            <source src="../assets/plaid/quovo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <p class="img-caption">This was the experience with Quovo.</p>
-        <span class="spacer-s"></span>
+        <p class="quote">I found out that the highest drop off point in the flow is the screen below – only 25-30% make it past this step.</p>
+        <img src="../assets/plaid/deposit.png" alt="">
         <p>
-            I want to note that the first two issues were resolved just by using Plaid! So I'll be going over the last two issues in this case study.
+            After you create your account, we drop you in the deposit flow to start funding your new account. 
+            New customers were getting stuck here because connecting your bank account is a burdensome task. 
+            It’s a long flow with a lot of credentials and loading screens. 
+        </p>
+        <p>
+            Ideally, I would’ve broken apart this screen specifically for onboarding. 
+            But, my team’s main priority at the time was the bank connection experience. 
+            I mention this drop off point because knowing this helped me design an experience that was much faster, clearer, and took the weight off a bit. 
+        </p>
+        <p class="quote">
+            My team’s main priority at the time was the bank connection experience. I mention this drop off point because knowing this helped me design an experience that was much faster, clearer, and took the weight off a bit. 
         </p>
     </section>
 
     <section class="container">
-        <h3>Design</h3>
+        <h3>Mapping the flow</h3>
         <p>
-            Based on our current experience and where we want to go with the Plaid updates, I created a flow to figure out the steps at a higher level. 
-            We have different logic based on where the customer enters the flow so I wanted to make sure I captured that, seeing what steps are similar 
-            and where they differ.
+            Based on our current experience and where we wanted to go with the Plaid updates, I created a flow to figure out the steps at a higher level. 
+            We have different logic based on where the customer enters the flow so I wanted to make sure I captured that, seeing what steps are similar and where they differ.
         </p>
         <img src="../assets/plaid/chart.png">
         <p class="img-caption">Lots of lines and arrows!</p>
-        <span class="spacer-s"></span>
         <p>
-            From here, I started designing the main steps: intro, connected accounts, and selecting a funding account.
-        </p>
-    </section>
-
-    <section class="container">
-        <h3>Testing</h3>
-        <p>
-            Before we get to the design iterations, I wanted to mention some early user testing.
-            I started testing my designs really early to get some general feedback and comprehension.
-            I wasn't sure if this was a common flow that people were used to on other financial apps.
-        </p>
-        <video autoplay muted loop>
-            <source src="../assets/plaid/user-test.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <p class="img-caption">Looking back now, the information in this iteration wasn't super clear. But I learned!</p>
-        <span class="spacer-s"></span>
-        <p>
-            I quickly learned that people were used to connecting their banks to financial apps.
-            Most of the user testers had no issues getting through it. 
-            Some did have some qualms about giving their financial data, but they were able to find the manual option pretty easily.
-        </p>
-    </section>
-
-    <section class="container">
-        <h3>Intro</h3>
-        <p>
-            The intro went through quite a few iterations.
-            For a bit of background, here are the types of connections you can make:
+            Some notes:
             <ul class="points">
-                <li>Instant connections through Plaid<br>
-                    <p>You connect your bank accounts with your bank credentials. This gives us the most accurate data on your finances. </p>
+                <li>There are 2 ways to connect: manually and instantly.<br>
+                    <p>Manually means inputting your routing and account number and sending micro-deposits for verification. 
+                        Betterment doesn’t get any details of your account like balance and account name.</p>
+                    <p>
+                        Instantly means entering your bank credentials into the bank aggregator. 
+                        Betterment gets more details like balance, account type, and more. 
+                        This allows Betterment to show a holistic view of your money. 
+                        We want to push for this one since we want Betterment to be your one stop shop for your finances.
+                    </p>
                 </li>
-                <li>Manual connections<br>
-                    <p>You enter an account and routing number and verify a micro-deposit. We get no real time data on this account.</p>
+                <li>Connected accounts can be defined as funding accounts.<br>
+                    <p>The way our system works, the customer needs to designate a funding account for each Betterment account. It’s a bit complex internally, but we make it seamless for our customers 😇</p>
+                </li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="container">
+        <h3>Research</h3>
+        <p>
+            Before we get to the design iterations, I wanted to mention some research. 
+            This was done through user interviews, talking to our customer experience team, and backlogged support tickets. 🤫
+        </p>
+        <p>
+            Learnings about connecting a bank account in general:
+            <ul class="points">
+                <li>Connecting your bank to a financial app is normal<br>
+                    <p>There was zero hesitation when the screen to connect your bank account came up.</p>
+                </li>
+                <li>Some people look to manually connect as their first choice<br>
+                    <p>This option is important! We need to find the right balance between instant and manual.</p>
                 </li>
             </ul>
         </p>
         <p>
-            We wanted to prioritize the instant connection through Plaid because we were able to get the most accurate data and give a holistic 
-            view of your finances.
-            We didn't want to discourage a manual connection because some times that's the only option for a bank, but we didn't want to have it 
-            on the same level as instant.
+            Learnings about the current Betterment experience:
+            <ul class="points">
+                <li>Customers can’t find the manual connection option</li>
+                <li>It’s often difficult to find your bank</li>
+                <li>Funding accounts are a confusing concept</li>
+            </ul>
         </p>
-        <p class="quote">
-            We wanted to prioritize the instant connection through Plaid because we were able to get the most accurate data and give a holistic 
-            view of your finances.
-        </p>
-        <p>
-            I ended up with this direction. This captured the main benefits of an instant connection. 
-            And the manual connection was right below as a tertiary link if you needed it. This solved our issue of clearing up the manual account option. Hooray!
-        </p>
-        <img src="../assets/plaid/intro-final.png">
-        <p class="img-caption">The final intro screen.</p>
+        
     </section>
 
     <section class="container">
-        <h3>Connected accounts & funding accounts</h3>
+        <h3>Finding the right balance</h3>
         <p>
-            After connecting on Plaid, we show you a summary of the accounts you connected.
-            Here are some iterations I did based on customer feedback on the existing Quovo experience.
+            We wanted to prioritize the instant connection through Plaid because we were able to get the most accurate data and give a holistic view of your finances. 
+            But we also didn't want to discourage a manual connection because some times that's the only option for a bank.
         </p>
-        <ul class="points">
-            <li>Unclear what account was connected because the names often came back weird<br>
-                <p>
-                    I tried to see if we could get the name of the account as it appears for customers' in their bank app.
-                    Unfortunately, this was pretty inconsistent and hard to get from Plaid.
-                    <span class="spacer-s"></span>
-                    <img src="../assets/plaid/post-1.png">
-                </p>
-            </li>
-            <span class="spacer-s"></span>
-            <li>Some customers only wanted to connect some accounts<br>
-                <p>
-                    In this iteration, I gave the option to deselect some accounts to hide.
-                    This doesn't mean we don't connect the account, but we ignore it from the Betterment side.
-                    This one was out of scope.
-                    <span class="spacer-s"></span>
-                    <img src="../assets/plaid/post-3.png">
-                </p>
-            </li>
-            <span class="spacer-s"></span>
-            <li>Funding accounts were unclear <br>
-                <p>
-                    This is one of the main issues and I tried to resolve it by combining two steps:
-                    showing the connected accounts and selecting funding accounts.
-                    I got feedback that this wasn't very clear and transparent on what was connected.
-                    <span class="spacer-s"></span>
-                    <img src="../assets/plaid/post-2.png">
-                </p>
-            </li>
-        </ul> 
+        <p class="quote">
+            We wanted to prioritize the instant connection through Plaid because we were able to get the most accurate data and give a holistic view of your finances.
+        </p>
         <p>
-            I ended up splitting the steps so we show you the connected accounts first and then ask which one you want to use as a funding account.
-            This resolved our funding accounts clarity issue!
+            The previous design was a grid of bubbles. 
+            Searching 2 dimensionally (horizontally and vertically) is very difficult compared to a vertical list. 
+            The colors and shapes also add additional noise. 
+            The manual option is often below the fold, but the link is under all the bubbles.
         </p>
-        <img src="../assets/plaid/post-final-1.png">
-        <p class="img-caption">This makes sure the customer understands what accounts they connected and what data we have.</p>
-        <span class="spacer"></span>
-        <img src="../assets/plaid/post-final-2.png">
-        <p class="img-caption">This step was able to clarify which accounts you can use as your funding account.</p>
+        <img src="../assets/plaid/quovo.png">
+        <p class="caption">😵‍💫</p>
+        <p>
+            Plaid resolved this list issue by using a vertical list, but we decided to add an introduction page for a few reasons: 
+            <ul class="points">
+                <li>Show quick key benefits of connecting instantly</li>
+                <li>Manual option is much clearer under the primary CTA</li>
+                <li>Give them a little space before dropping them into Plaid – nice and easy steps ~</li>
+            </ul>
+        </p>
+        <img src="../assets/plaid/intro-final.png">
+        <p class="caption">🤩</p>
+    </section>
+
+    <section class="container">
+        <h3>Funding accounts</h3>
+        <p>
+            After Plaid, we show you a summary of the accounts you connected and we’ll ask you to choose an account for funding your Betterment account.
+        </p>
+        <p>
+            Some issues I found from our CX team:
+            <ul class="points">
+                <li>It’s unclear what account was connected because the names often came back as just numbers</li>
+                <li>Some customers only wanted to connect a few accounts from their bank</li>
+                <li>Funding accounts were unclear</li>
+            </ul>
+        </p>
+        <img src="../assets/plaid/account-iterations.png">
+        <p class="caption">These were some iterations I created based on those issues.</p>
+        <p>In my iterations, I focused a lot on trying to do 2 steps on 1 screen. 
+            I quickly realized that wasn’t working based on user tests and feedback from my team. 
+            It was too much cognitive overload, too many words, and splitting up steps into smaller ones feels faster!
+        </p>
+        <img src="../assets/plaid/account-final.png">
+        <p class="caption">Splitting up the screen so it feels faster and quicker to process each step.</p>
     </section>
 
     <section class="container">
@@ -183,7 +196,7 @@
             </ul>
         </p>
         <p>
-            If interested, you can read more about the migration on <a class="p-links" href="https://plaid.com/customer-stories/betterment/" target="_blank">Plaid's blog</a>.
+            If interested, you can read more about the project on <a class="p-links" href="https://plaid.com/customer-stories/betterment/" target="_blank">Plaid's blog</a>.
         </p>
         <p>
             This was a pretty huge project. Our team worked on this for months to make the transition smooth for our customers.
