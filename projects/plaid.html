@@ -87,7 +87,6 @@
                         Instantly means entering your bank credentials into the bank aggregator. 
                         Betterment gets more details like balance, account type, and more. 
                         This allows Betterment to show a holistic view of your money. 
-                        We want to push for this one since we want Betterment to be your one stop shop for your finances.
                     </p>
                 </li>
                 <li>Connected accounts can be defined as funding accounts.<br>
@@ -100,7 +99,7 @@
     <section class="container">
         <h3>Research</h3>
         <p>
-            Before we get to the design iterations, I wanted to mention some research. 
+            Before the design iterations, I wanted to mention some research I did. 
             This was done through user interviews, talking to our customer experience team, and backlogged support tickets. 🤫
         </p>
         <p>
@@ -128,22 +127,24 @@
     <section class="container">
         <h3>Finding the right balance</h3>
         <p>
-            We wanted to prioritize the instant connection through Plaid because we were able to get the most accurate data and give a holistic view of your finances. 
+            I wanted to prioritize the instant connection through Plaid because Betterment is able to get the most accurate data and give a holistic view of your finances. 
+            This helps users get a one stop shop view of their net worth.
+            From the business perspective, having a larger view of customer finances helps us cross-sell Betterment products and create more value for customers.
             But we also didn't want to discourage a manual connection because some times that's the only option for a bank.
         </p>
         <p class="quote">
-            We wanted to prioritize the instant connection through Plaid because we were able to get the most accurate data and give a holistic view of your finances.
+            From the business perspective, having a larger view of customer finances helps us cross-sell Betterment products and create more value for customers.
         </p>
         <p>
             The previous design was a grid of bubbles. 
             Searching 2 dimensionally (horizontally and vertically) is very difficult compared to a vertical list. 
             The colors and shapes also add additional noise. 
-            The manual option is often below the fold, but the link is under all the bubbles.
+            The manual option is often below the fold, but it's under all the bubbles!
         </p>
         <img src="../assets/plaid/quovo.png">
         <p class="caption">😵‍💫</p>
         <p>
-            Plaid resolved this list issue by using a vertical list, but we decided to add an introduction page for a few reasons: 
+            Plaid resolved this list issue by using a vertical list, but I decided to add an introduction page for a few reasons: 
             <ul class="points">
                 <li>Show quick key benefits of connecting instantly</li>
                 <li>Manual option is much clearer under the primary CTA</li>
@@ -157,7 +158,9 @@
     <section class="container">
         <h3>Funding accounts</h3>
         <p>
-            After Plaid, we show you a summary of the accounts you connected and we’ll ask you to choose an account for funding your Betterment account.
+            In the old experience, the flow went straight back to the deposit flow after connecting on Quovo.
+            This was jarring as a user. The experience didn't tell you what just happened. It jumped a few steps and left the user confused.
+            So I decided to add 2 things: a summary of the connection and selecting a funding account.
         </p>
         <p>
             Some issues I found from our CX team:
@@ -199,19 +202,18 @@
             If interested, you can read more about the project on <a class="p-links" href="https://plaid.com/customer-stories/betterment/" target="_blank">Plaid's blog</a>.
         </p>
         <p>
-            This was a pretty huge project. Our team worked on this for months to make the transition smooth for our customers.
-            There were some tech constraints and challenges, but I was able to work with our lead engineer to figure out a solution that works conceptually and technically. 
-            I'm pretty proud of how the experience ended up and the impact we had on our customers behind the scenes!
-            I was also very excited to have updated our flows with current components and styles.
+            This was a huge project. Our team worked on this for months to make the transition smooth for our customers.
+            I led all the design work and was proud of all the user experience updates I made (read: fought for) despite the main goal being the bank aggregator swap.
+            I was also very excited to have updated our flows with current components and styles!
         </p>
         <p class="quote">
-            There were some tech constraints and challenges, but I was able to work with our lead engineer to figure out a solution that works conceptually and technically. 
+            I led all the design work and was proud of all the user experience updates I made (read: fought for) despite the main goal being the bank aggregator swap.
         </p>
     </section>
 
     <section class="container page-links">
-      <a class="button" href="deposit-advice"> <- Deposit advice </a>
-      <a class="button" href="design-system"> Primer Design System -> </a>
+      <a class="button" href="chess-club"> <- Chess Club </a>
+      <a class="button" href="deposit-advice"> Deposit Advice -> </a>
     </section>
 
 </body>
