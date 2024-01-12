@@ -228,10 +228,10 @@ a.button:hover {
     font-size: 34px;
   }
   .container {
-    padding: 4%;
+    padding: 5%;
   }
   .project-body {
-    padding: 5% 10% 10% 10%; 
+    padding: 0; 
   }
 
 }
@@ -246,6 +246,6 @@ a.button:hover {
     padding: 5%; 
   }
   .project-body { 
-    padding: 2.5%; 
+    padding: 0; 
   }
 }
