@@ -142,19 +142,21 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  text-underline-offset: 6px;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
   text-decoration-color: gray;
 }
 a.header {
   text-decoration: underline;
   text-underline-offset: 6px;
-  text-decoration-thickness: 1.5px; 
+  text-decoration-thickness: 1.5px;
   text-decoration-color: black;
 }
 a.header:hover {
   text-decoration: underline;
   text-decoration-style: wavy;
-  text-underline-offset: 6px;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
   text-decoration-color: black;
 }
 a.project-title {
@@ -163,7 +165,8 @@ a.project-title {
 a.project-title:hover {
   text-decoration: underline;
   text-decoration-style:solid;
-  text-underline-offset: 6px;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
   text-decoration-color: black;
 }
 a.button {
@@ -172,7 +175,8 @@ a.button {
 a.button:hover {
   text-decoration: underline;
   text-decoration-style:solid;
-  text-underline-offset: 6px;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
   text-decoration-color: black;
 }
 .caption-link {
@@ -180,9 +184,9 @@ a.button:hover {
   font-size: 13px;
   color: gray;
   text-decoration: underline;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 1.5px; 
-  text-decoration-color: black;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: gray;
 }
 .page-links {
   display: flex;
@@ -194,8 +198,8 @@ a.button:hover {
 }
 .p-links {
   text-decoration: underline;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 1.5px; 
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
   text-decoration-color: black;
 }
 
@@ -212,11 +216,31 @@ a.button:hover {
 
 /*---- MEDIA QUERIES ----*/
  @media (max-width: 768px) { 
-  body { padding: 5% 10% 10% 10%; }
-  .project-body { padding: 5% 10% 10% 10%; }
+  h1 {
+    font-size: 40px;
+  }
+  .inter {
+    font-size: 34px;
+  }
+  .container {
+    padding: 4%;
+  }
+  .project-body {
+    padding: 5% 10% 10% 10%; 
+  }
 
 }
 @media (max-width: 480px) {
-  body { padding: 2.5%; }
-  .project-body { padding: 2.5%; }
+  h1 {
+    font-size: 40px;
+  }
+  .inter {
+    font-size: 34px;
+  }
+  .container { 
+    padding: 5%; 
+  }
+  .project-body { 
+    padding: 2.5%; 
+  }
 }
