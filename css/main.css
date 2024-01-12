@@ -58,14 +58,19 @@ hr {
 h1 {
   font-family: 'Loretta', 'Times New Roman', Times, serif;
   font-size: 48px;
-  -webkit-font-smoothing: antialiased;
   margin: 8px 0;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
+  -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
 }
 h2 {
   font-family: 'Loretta', 'Times New Roman', Times, serif;
   line-height: 1.6;
   font-size: 24px;
   margin: 8px 0;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
+  -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
 }
 h3 {
   font-family: 'Inter', sans-serif;
