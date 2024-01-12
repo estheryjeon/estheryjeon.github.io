@@ -12,118 +12,106 @@
 @font-face {
   font-family: 'Loretta-Italic';
   src: url('fonts/Loretta-LightItalic.otf') format('opentype');
-  font-weight: light;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Loretta-Medium';
   src: url('fonts/Loretta-Medium.otf') format('opentype');
-  font-weight: medium;
   font-style: normal;
 }
 
 body {
   background-color: #FFFFFF;
-  padding: 5% 10% 10% 10%;
+  padding: 0;
+  margin: 0;
 }
 .project-body {
   background-color: #FFFFFF;
-  padding: 5% 24% 10% 24%;
+  padding: 2% 24% 10% 24%;
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr));
-  grid-gap: 48px;
+  grid-gap: 32px;
 }
 .grid-container > div {
   width: 100%;
 }
-
-::selection {
-  background: #CDE784;
-}
-
 .container {
-  padding-bottom: 5%;
+  padding: 2%;
 }
-
 img {
   width: 100%;
   margin-top: 8px;
 }
 video {
+  margin-top: 8px;
   width: 100%;
+}
+hr {
+  border: 1px solid #E4E4E4;
 }
 
 /*---- TYPOGRAPHY ----*/
 
 h1 {
-  font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  font-weight: bold;
+  font-family: 'Loretta', 'Times New Roman', Times, serif;
+  font-size: 48px;
+  -webkit-font-smoothing: antialiased;
+  margin: 8px 0;
 }
-
 h2 {
   font-family: 'Loretta', 'Times New Roman', Times, serif;
   line-height: 1.6;
   font-size: 24px;
-  font-weight: 200;
-  margin: 0;
+  margin: 8px 0;
 }
-
 h3 {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 4px;
 }
-
+.sub-copy {
+  font-family: 'Inter';
+  line-height: 1.6;
+  font-size: 16px;
+}
 p {
   font-family: 'Loretta', 'Times New Roman', Times, serif;
   line-height: 1.6;
-  font-size: 1em;
+  font-size: 16px;
   margin: 8px 0px;
 }
-
-.section-title {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-
 .caption {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
   color: grey;
 }
-
+.inter {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+.italic {
+  font-family: 'Loretta-Italic','Times New Roman', Times, serif;
+}
 .button {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
 }
-
 .quote {
   font-family: 'Loretta-Italic', 'Times New Roman', Times, serif;
-  font-size: 1.25em;
+  font-size: 24px;
   line-height: 1.4em;
   border-left: 1px solid;
   margin: 8px;
   padding: 0% 4%;
 }
-
-.img-caption {
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  color: grey;
-  margin: 2px;
-}
-
-.sub-copy {
-  font-family: 'Inter';
-  line-height: 1.6;
-  font-size: 1em;
-  color: grey;
+.icon {
+  width: 36px;
 }
 
 /*---- LISTS ----*/
@@ -141,55 +129,74 @@ li {
   padding-left: 8px;
   padding-bottom: 8px;
 }
-
 .points {
   list-style-type: "✳︎";
 }
-
 .points li{
   font-family: 'Loretta-Medium', sans-serif;
 }
 
 /*---- LINKS ----*/
-
 a {
   color: black;
-  text-decoration: none;
-  font-family: 'Loretta', serif;
 }
 a:hover {
   text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-style: dashed;
-  text-decoration-thickness: 1.5px; 
+  text-underline-offset: 6px;
   text-decoration-color: gray;
 }
-
+a.header {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1.5px; 
+  text-decoration-color: black;
+}
+a.header:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 6px;
+  text-decoration-color: black;
+}
+a.project-title {
+  text-decoration: none;
+}
+a.project-title:hover {
+  text-decoration: underline;
+  text-decoration-style:solid;
+  text-underline-offset: 6px;
+  text-decoration-color: black;
+}
+a.button {
+  text-decoration: none;
+}
+a.button:hover {
+  text-decoration: underline;
+  text-decoration-style:solid;
+  text-underline-offset: 6px;
+  text-decoration-color: black;
+}
 .caption-link {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
   color: gray;
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 6px;
   text-decoration-thickness: 1.5px; 
-  text-decoration-color: gray;
+  text-decoration-color: black;
 }
-
 .page-links {
   display: flex;
   justify-content: space-between;
   padding-top: 2em;
 }
-
 .project-links {
   list-style-type: "↗︎";
 }
-
 .p-links {
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 6px;
   text-decoration-thickness: 1.5px; 
-  text-decoration-color: gray;
+  text-decoration-color: black;
 }
 
 /*---- SPACING ----*/
